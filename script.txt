@@ -1,0 +1,13 @@
+
+echo "loading";
+sleep 2;
+echo "loading...";
+sleep 3;
+echo "started"
+echo "enter the name of the extension of the file"
+read extension
+sudo fdisk -l
+mkdir ~/recovery/
+echo "select the disk in which the data is "
+read drive
+sudo foremost -v -t $extension -i $drive -o ~/recovery/ 
